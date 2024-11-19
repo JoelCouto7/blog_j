@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog J</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon|outline|emboss|shadow-multiple">
+		<link rel="stylesheet" href="./estilo.css">
+		<link rel="stylesheet" href="./estilo_darkmode.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<div id="cabecera">
+			<h1 id="titulo" class="font-effect-shadow-multiple">
+				<a href="./principal.html">Blog J</a>
+			</h1>
+			<!-- Switch "Modo oscuro" -->
+			<label id="switch" class="switch">
+				<input type="checkbox" id="toggle">
+				<span class="slider"></span>
+			</label>
+		</div>
+		<ul class="sidenav">
+			<li><a href="./principal.html">Inicio</a></li>
+			<li class="dropdown">
+					<a>Entradas</a>
+					<div class="dropdown-content">
+						<a class="active" href="./entrada_1.html">FPS</a>
+						<a href="./entrada_2.html">Anti-aliasing</a>
+						<a href="./entrada_3.html">Ranking</a>
+					</div>
+			</li>
+		</ul>
+		<div class="content">
+			<h2>¿Porqué 50Fps es mejor que 60Fps?</h2>
+			<p>Este es un asunto que afecta a todos los jugadores, tanto en Pc como en consolas. En cambio, no afecta para nada a animaciones o cine.</p>
+			<p>A primera vista puede parecer que 60 cuadros por segundo en videojuegos es mejor que 50, simplemente porque son más cuadros por segundo. Pero voy a explicar razonadamente mi postura.</p>
+			<div class="imagen">
+				<img src="./imagenes/zelda.png" alt="Zelda">
+				<p>Imagen de un juego con Fps inestable.</p>
+			</div>
+			<hr/>
+			<h3>1. La inestabilidad actual:</h3>
+			<p>No debería ser normal, pero a día de hoy lo es. Los juegos son cada vez más inestables tanto en Pc como en consolas. Según los análisis técnicos de <a href="https://www.youtube.com/@DigitalFoundry/featured">Digital Foundry</a> se puede ver, cada vez con más frecuencia, juegos que intentar ir a 60Fps pero no son capaces, quedándose en muchos casos entre los 40 y los 50 Fps con de manera inconsistente.</p>
+			<p>Este fenómeno, en la mayoría de los casos, se debe a que el juego utiliza una resolución dinámica para intentar ofrecer la mejor calidad de imagen todo el tiempo, pero hay varios estudios que demuestan que el uso de esta tecnología es perjudicial para el rendimiento del juego, por lo que es mejor utilizar una resolución fija y buscar un número de Fps fijo adecuado.</p>
+			<p>Parecerá una tontería, pero opino que establecer un estandar de 50Fps podría garantizar un mayor número de juegos con rendimiento estable.</p>
+			<hr/>
+			<h3>2. La parte computacional:</h3>
+			<p>Mucha gente no lo sabe, pero para que los juegos corran a 60 cuadros por segundo, el ordenador debe dividir 1 segundo en 60 fracciones de tiempo iguales. Pero aquí es donde empiezan los problemas, pues los ordenadores utilizan los milisegundos como unidad de medida para esta operación. De modo que en 1 segundo hay 1000 milisegundos y el problema es que no se puede dividir 1000 entre 60 y que de un número entero, porque da 16'666666... milisegundo. Los decimales son el enemigo de la computación. Con este resultado, lo único que puede hacer el ordenador es untilizar 16 milisegundos para un frame y 17 para los dos siguientes. De modo que los 60Fps siempre han sido una mentira.</p>
+			<p>Por otro lado, sí es posible divir 1000 milisegundos entre 50 y el resultado es 20 milisegundos, un número entero. De este modo todos los frames tendrían exactamente la misma duración y no viviríamos una mentira.</p>
+			<hr/>
+			<h3>3. La frecuencia de refresco de las pantallas:</h3>
+			<p>Hoy en día todas las pantallas tienen una tasas de refresco de 60Hz y la mayoría soportan 50Hz. Esto es importante, porque la tasa de refresco de las pantallas debe sincronizarse con la tasa de cuadros por segundo para obtener el resultado visual óptimo.</p>
+		</div>
+	</body>
+</html>

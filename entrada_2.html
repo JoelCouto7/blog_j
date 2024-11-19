@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog J</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon|outline|emboss|shadow-multiple">
+		<link rel="stylesheet" href="./estilo.css">
+		<link rel="stylesheet" href="./estilo_darkmode.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<div id="cabecera">
+			<h1 id="titulo" class="font-effect-shadow-multiple">
+				<a href="./principal.html">Blog J</a>
+			</h1>
+			<!-- Switch "Modo oscuro" -->
+			<label id="switch" class="switch">
+				<input type="checkbox" id="toggle">
+				<span class="slider"></span>
+			</label>
+		</div>
+		<ul class="sidenav">
+			<li><a href="./principal.html">Inicio</a></li>
+			<li class="dropdown">
+					<a>Entradas</a>
+					<div class="dropdown-content">
+						<a href="./entrada_1.html">FPS</a>
+						<a class="active" href="./entrada_2.html">Anti-aliasing</a>
+						<a href="./entrada_3.html">Ranking</a>
+					</div>
+			</li>
+		</ul>
+		<div class="content">
+			<h2>¿Porqué el anti-aliasing se está aplicando mal?</h2>
+			<p>El anti-aliasing es un concepto con el que están famaliarizados aquellos que han entrado en las opciones gráficas de los juegos en el ordenador. Pero también es utilizado en la gran mayoría de los juegos en consolas por sus ventajas en el aspecto visual.</p>
+			<p>En pocas palabras, el anti-aliasing es una tecnología que mejora la calidad de imagen de un juego al suavizar los bordes.</p>
+			<div class="imagen">
+				<img src="./imagenes/antialiasing.png" alt="Ejemplo">
+				<p>Ejemplo de anti-aliasing con un dibujo simple.</p>
+			</div>
+			<hr/>
+			<h3>1. Los problemas del anti-aliasing:</h3>
+			<p>El anti-aliasing tiene muchísimas variantes, todas con sus pros y sus contras. Pero todos tienen un fallo común, eliminan los pequeños detalles en la imagen y destruyen algunos efectos visuales.</p>
+			<p>El anti-aliasing utiliza algortimos muy complejos que recorren la imagen y la "arreglan" eliminando el ruido y reduciendo los llamados "dientes de sierra". El problema, es que es un algoritmo "tonto" que no identifica correctamente el ruido en la imagen y muchas veces destruye todos los efectos sutiles como las gotas de la lluvia o los detalles de la hierba.</p>
+			<p>Es cierto que no es el fin del mundo y mucha gente no lo nota. Pero una vez lo notas, no puedes dejar de verlo.</p>
+			<hr/>
+			<h3>2. ¿Qué opciones hay?</h3>
+			<p>Sólo hay una solución razonable, Supersampling.</p>
+			<p>El Supersampling es una tecnología mucho más simple que los demás tipos de anti-aliasing, pero mucho más efectiva. El único contra que tiene es su alto coste computacional.</p>
+			<p>El Supersampling consiste es reenderizar el juego a una resolución interna mayor que la resolución de salida. De esta forma eliminamos efectivamente todos los "dientes de sierra" y además no destruye ningún efecto visual o partícula. Es simplemente la solución perfecta.</p>
+		</div>
+	</body>
+</html>

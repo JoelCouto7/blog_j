@@ -1,0 +1,49 @@
+body.darkmode {
+	color: white;
+}
+
+body.darkmode div.content {
+	background-image: conic-gradient(
+	  red 0deg, red 30deg,
+	  blue 30deg, blue 40deg,
+	  black 40deg, black 50deg,
+	  blue 50deg, blue 60deg,
+	  black 60deg, black 70deg,
+	  blue 70deg, blue 80deg,
+	  black 80deg, black 90deg,
+	  blue 90deg, blue 100deg,
+	  black 100deg, black 110deg,
+	  blue 110deg, blue 120deg,
+	  black 120deg, black 130deg,
+	  blue 130deg, blue 140deg,
+	  black 140deg, black 150deg,
+	  blue 150deg, blue 160deg,
+	  black 160deg, black 170deg,
+	  blue 170deg, blue 180deg,
+	  black 180deg, black 190deg,
+	  blue 190deg, blue 200deg,
+	  black 200deg, black 210deg,
+	  red 210deg);
+}
+
+
+body.darkmode div.content a {
+	color: white;
+}
+
+body.darkmode #titulo a {
+	color: red;
+}
+
+body.darkmode .entrada {
+	background-color: black;
+	border: 8px solid white;
+}
+
+body.darkmode .entrada:hover {
+	background-color: red;
+}
+
+body.darkmode .entrada h4 {
+	color: white;
+}

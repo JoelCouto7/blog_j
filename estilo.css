@@ -1,0 +1,284 @@
+body {
+	margin: 0;
+	background-color: black;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  /* background-color: #f1f1f1; */
+  background-color: #000;
+  color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0px;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  /*background-color: #4CAF50;*/
+  background-color: red;
+  /*color: white;*/
+  border: 4px solid white;
+  padding: 12px 24px;
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: black;
+  color: white;
+  border: 4px solid red;
+}
+
+div.content {
+  margin-left: 20%;
+  padding: 1px 16px;
+  /* height: 1000px; */
+  position: absolute;
+  background-image: conic-gradient(
+	  #FCE6F4 0deg, #FCE6F4 30deg,
+	  #E6FBFC 30deg, #E6FBFC 40deg,
+	  white 40deg, white 50deg,
+	  #E6FBFC 50deg, #E6FBFC 60deg,
+	  white 60deg, white 70deg,
+	  #E6FBFC 70deg, #E6FBFC 80deg,
+	  white 80deg, white 90deg,
+	  #E6FBFC 90deg, #E6FBFC 100deg,
+	  white 100deg, white 110deg,
+	  #E6FBFC 110deg, #E6FBFC 120deg,
+	  white 120deg, white 130deg,
+	  #E6FBFC 130deg, #E6FBFC 140deg,
+	  white 140deg, white 150deg,
+	  #E6FBFC 150deg, #E6FBFC 160deg,
+	  white 160deg, white 170deg,
+	  #E6FBFC 170deg, #E6FBFC 180deg,
+	  white 180deg, white 190deg,
+	  #E6FBFC 190deg, #E6FBFC 200deg,
+	  white 200deg, white 210deg,
+	  #FCE6F4 210deg);
+  min-height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  /*background-image: url('./imagenes/fondo.png');*/
+  
+}
+
+p, h2, h3{
+	text-shadow: 1px 1px gray;
+}
+
+@media screen and (max-width: 20cm) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+  
+	.entrada{
+		width: 90% !important;
+		max-width: 14cm !important;
+	}
+	
+	.dropdown-content {
+		width: fit-content !important;
+	}
+}
+
+@media screen and (max-width: 11cm) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+#titulo{
+	font-family: "Audiowide", sans-serif;
+	text-align: center;
+	color: cyan;
+	background-color: black;
+	margin: 5px 0px;
+}
+#titulo a{
+	color: #FCE6F4;
+	text-decoration: none;
+}
+
+#switch{
+	position: absolute;
+	top: 8px;
+    right: 16px;
+}
+
+img{
+	width: 100%;
+	min-width: 9cm;
+	max-width: 20cm;
+	margin: 0 auto;
+	display: block;
+}
+
+h2{
+	text-align: center;
+}
+
+*{
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+.imagen p{
+	font-family: 'Times New Roman', serif;
+	text-align: center;
+	margin: 0px;
+}
+
+.juego{
+	width: 30%;
+	min-width: 20%;
+}
+
+.entrada{
+	display: inline-block;
+	margin-right: 2%;
+	margin-bottom: 3%;
+	width: 40%;
+	max-width: 9cm;
+	border: 8px solid black;
+	border-radius: 10%;
+	background-color: white;
+	padding: 2%;
+	/*box-shadow: 16px 16px lightblue;*/
+	text-align: center;
+	transition: transform 0.1s;
+}
+
+.entrada:hover{
+	transform: rotate(5deg);
+	background-color: red;
+	box-shadow: 16px 16px black;
+	border: 8px solid white;
+}
+
+.entrada img{
+	min-width: 0px;
+	max-height: 187px;
+	max-width: -webkit-fill-available;
+	width: auto;
+}
+
+.entrada a{
+	text-decoration: none;
+}
+
+.entrada h4{
+	margin: 0px;
+	color: black;
+}
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/*
+.dropdown {
+  position: relative;
+  display: inline-block;
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3f3f3f;
+  min-width: 160px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+/* Estilo del switch "modo oscuro" */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E6FBFC;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: blue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px blue;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+	

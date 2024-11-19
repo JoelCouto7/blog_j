@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog J</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon|outline|emboss|shadow-multiple">
+		<link rel="stylesheet" href="./estilo.css">
+		<link rel="stylesheet" href="./estilo_darkmode.css">
+		<script src="script.js"></script>
+	</head>
+	
+	<body>
+		<div id="cabecera">
+			<h1 id="titulo" class="font-effect-shadow-multiple">
+				<a href="./principal.html">Blog J</a>
+			</h1>
+			<!-- Switch "Modo oscuro" -->
+			<label id="switch" class="switch">
+				<input type="checkbox" id="toggle">
+				<span class="slider"></span>
+			</label>
+		</div>
+		
+		<ul class="sidenav">
+			<li><a class="active" href="./principal.html">Inicio</a></li>
+			<li class="dropdown">
+				<a>Entradas</a>
+				<div class="dropdown-content">
+					<a href="./entrada_1.html">FPS</a>
+					<a href="./entrada_2.html">Anti-aliasing</a>
+					<a href="./entrada_3.html">Ranking</a>
+				</div>
+			</li>
+		</ul>
+		
+		<div class="content">
+			<p>Este blog ha sido creado como entrega de la primera práctica de la asignatura <b>Desarrollo de Aplicaciones en Red</b>.</p>
+			<div class="entrada">
+				<a href="./entrada_1.html">
+					<img src="./imagenes/zelda.png" alt="Zelda">
+					<h4>¿Son 50 Fps mejor que 60 Fps?</h4>
+				</a>
+			</div>
+			<div class="entrada">
+				<a href="./entrada_2.html">
+					<img src="./imagenes/antialiasing.png" alt="Zelda">
+					<h4>¿Se aplica mal el anti-aliasing?</h4>
+				</a>
+			</div>
+			<div class="entrada">
+				<a href="./entrada_3.html">
+					<img src="./imagenes/juegos.png" alt="Zelda">
+					<h4>Los juegos que he jugado.</h4>
+				</a>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
