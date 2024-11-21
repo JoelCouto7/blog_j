@@ -1,34 +1,39 @@
 body.darkmode {
 	color: white;
+	background-color: black;
 }
 
 body.darkmode div.content {
 	background-image: conic-gradient(
-	  red 0deg, red 30deg,
-	  blue 30deg, blue 40deg,
+	  darkred 0deg, darkred 30deg,
+	  darkblue 30deg, darkblue 40deg,
 	  black 40deg, black 50deg,
-	  blue 50deg, blue 60deg,
+	  darkblue 50deg, darkblue 60deg,
 	  black 60deg, black 70deg,
-	  blue 70deg, blue 80deg,
+	  darkblue 70deg, darkblue 80deg,
 	  black 80deg, black 90deg,
-	  blue 90deg, blue 100deg,
+	  darkblue 90deg, darkblue 100deg,
 	  black 100deg, black 110deg,
-	  blue 110deg, blue 120deg,
+	  darkblue 110deg, darkblue 120deg,
 	  black 120deg, black 130deg,
-	  blue 130deg, blue 140deg,
+	  darkblue 130deg, darkblue 140deg,
 	  black 140deg, black 150deg,
-	  blue 150deg, blue 160deg,
+	  darkblue 150deg, darkblue 160deg,
 	  black 160deg, black 170deg,
-	  blue 170deg, blue 180deg,
+	  darkblue 170deg, darkblue 180deg,
 	  black 180deg, black 190deg,
-	  blue 190deg, blue 200deg,
+	  darkblue 190deg, darkblue 200deg,
 	  black 200deg, black 210deg,
-	  red 210deg);
+	  darkred 210deg);
 }
 
 
 body.darkmode div.content a {
 	color: white;
+}
+
+body.darkmode #titulo{
+	background-color: black;
 }
 
 body.darkmode #titulo a {
@@ -46,4 +51,46 @@ body.darkmode .entrada:hover {
 
 body.darkmode .entrada h4 {
 	color: white;
+}
+
+body.darkmode ul.sidenav {
+	background-color: black;
+	color: white;
+}
+
+body.darkmode ul.sidenav li a {
+	color: white;
+}
+
+body.darkmode ul.sidenav li a.active {
+	background-color: red;
+	color: white;
+}
+
+body.darkmode ul.sidenav li a:hover:not(.active) {
+	background-color: black;
+	color: white;
+	border: 4px solid red;
+}
+
+body.darkmode .dropdown-content {
+	background-color: #3f3f3f;
+}
+
+body.darkmode .dropdown-content a {
+	color: white;
+}
+
+body.darkmode .slider:before {
+	background-color: silver;
+}
+
+body.darkmode .contenedor_imagenes{
+	border: 8px solid white;
+	background-color: black;
+}
+
+body.darkmode .w3-black, .w3-hover-black:hover {
+    color: #000 !important;
+    background-color: #FFF !important;
 }
